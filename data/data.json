@@ -1,0 +1,147 @@
+{
+    "roadshows": [
+        {
+            "title": "Spring Roadshow",
+            "stops": [
+                {
+                    "date": "March, 11th",
+                    "city": "Rennes",
+                    "activities": [
+                        {
+                            "talks": [
+                                {
+                                    "title": "IoT workshop",
+                                    "speakers": [
+                                        "François Bouteruche",
+                                        "Christopher Maneu",
+                                        "Olivier Leplus"
+                                    ]
+                                }
+                            ],
+                            "host": "L'Eclozr"
+                        },
+                        {
+                            "talks": [
+                                {
+                                    "title": "Pimp your vscode",
+                                    "speakers": [
+                                        "Olivier Leplus"
+                                    ]
+                                },
+                                {
+                                    "title": "Enrichir l’expérience utilisateur d’une application avec les Cognitive Services et Serverless",
+                                    "speakers": [
+                                        "Christopher Maneu"
+                                    ]
+                                }
+                            ],
+                            "host": "MUG Rennes"
+                        }
+                    ]
+                },
+                {
+                    "date": "March, 12th",
+                    "city": "Nantes",
+                    "activities": [
+                        {
+                            "talks": [
+                                {
+                                    "title": "IoT workshop",
+                                    "speakers": [
+                                        "François Bouteruche",
+                                        "Christopher Maneu",
+                                        "Olivier Leplus"
+                                    ]
+                                }
+                            ],
+                            "host": "EPSI"
+                        },
+                        {
+                            "talks": [
+                                {
+                                    "title": "Keep Calm & PoC sur le cloud",
+                                    "speakers": [
+                                        "Christopher Maneu"
+                                    ]
+                                }
+                            ],
+                            "host": "MUG .Net Nantes"
+                        }
+                    ]
+                },
+                {
+                    "date": "March, 13th",
+                    "city": "Tours",
+                    "activities": [
+                        {
+                            "talks": [
+                                {
+                                    "title": "IoT workshop",
+                                    "speakers": [
+                                        "François Bouteruche",
+                                        "Christopher Maneu",
+                                        "Olivier Leplus"
+                                    ]
+                                }
+                            ],
+                            "host": "CFIM"
+                        },
+                        {
+                            "talks": [
+                                {
+                                    "title": "Pimp your vscode",
+                                    "speakers": [
+                                        "Olivier Leplus"
+                                    ]
+                                },
+                                {
+                                    "title": "DevOps @ Microsoft ",
+                                    "speakers": [
+                                        "François Bouteruche"
+                                    ]
+                                }
+                            ],
+                            "host": "MUG Tours"
+                        }
+                    ]
+                },
+                {
+                    "date": "March, 14th",
+                    "city": "Orleans",
+                    "activities": [
+                        {
+                            "talks": [
+                                {
+                                    "title": "IoT workshop",
+                                    "speakers": [
+                                        "François Bouteruche",
+                                        "Christopher Maneu",
+                                        "Olivier Leplus"
+                                    ]
+                                }
+                            ],
+                            "host": "Polytech Orleans"
+                        },
+                        {
+                            "talks": [
+                                {
+                                    "title": "Le recrutement des développeurs : l’envers du décor ",
+                                    "speakers": [
+                                        "Christopher Maneu"
+                                    ]
+                                },
+                                {
+                                    "title": "DevOps @ Microsoft ",
+                                    "speakers": [
+                                        "François Bouteruche"
+                                    ]
+                                }
+                            ],
+                            "host": "MUG Orleans"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

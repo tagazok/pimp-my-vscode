@@ -1,0 +1,53 @@
+body {
+    padding:0;
+    color: rgb(82, 92, 101);
+}
+
+body {
+    background-color: red;
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.roadshow-title {
+    font-size: 32px;
+    color: #3f4253;
+    text-align: center;
+}
+
+.roadshow-activities {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.infos {
+    text-align: right;
+}
+.roadshow-stop {
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.roadshow-stop:last-child {
+    border-bottom: none;
+}
+
+.activity:first-of-type {
+    padding-bottom: 20px;
+}
+
+.host {
+    text-decoration: none;
+    color: #6f7679;
+}
+
+.speakers {
+    color: #6f7679;
+    font-size: 13px;
+    font-weight: normal;
+}
