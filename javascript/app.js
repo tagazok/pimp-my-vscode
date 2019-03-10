@@ -14,18 +14,16 @@ function fetchData() {
 }
 
 // Talk
-class Talk {
-    constructor(data) {
-        this.title = data.title;
-        this.speakers = data.speakers || [];
-    }
-    toHtml() {
-        return `
-        ${this.title} • <span class="speakers">(${this.speakers.join(', ')})</span>
-    `;
-    }
+function Talk(data) {
+    this.title = data.title;
+    this.speakers = data.speakers || [];
 }
 
+Talk.prototype.toHtml = function() {
+    return `
+        ${this.title} • <span class="speakers">(${this.speakers.join(', ')})</span>
+    `;
+}
 
 // Activity
 function Activity(data) {
