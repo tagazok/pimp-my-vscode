@@ -6,7 +6,6 @@ function fetchData() {
             return response.json();
         }).then(function (data) {
             data.roadshows.forEach(roadshow => {
-                console.log(roadshow);
                 const rs = new Roadshow(roadshow);
                 rs.display();
             })
