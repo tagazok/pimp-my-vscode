@@ -2,9 +2,9 @@ fetchData();
 
 function fetchData() {
     return fetch('/data/data.json')
-        .then(function (response) {
+        .then(function(response) {
             return response.json();
-        }).then(function (data) {
+        }).then(function(data) {
             data.roadshows.forEach(roadshow => {
                 const rs = new Roadshow(roadshow);
                 rs.display();
@@ -38,7 +38,7 @@ Activity.prototype.addTalk = function(talk) {
 }
 
 Activity.prototype.toHtml = function() {
-    let html = 
+    let html =
         `<div class="activity">
             <div class="host">${this.host}</div><ul>`;
     this.talks.forEach(talk => {
@@ -86,7 +86,7 @@ function Roadshow(data) {
     });
 }
 
-Roadshow.prototype.addStop = function (stop) {
+Roadshow.prototype.addStop = function(stop) {
     this.stops.push(new RoadshowStop(stop));
 }
 
@@ -109,7 +109,7 @@ Roadshow.prototype.generateTemplate = function() {
 
 Roadshow.prototype.displayStops = function() {
     let html = '<ul class="roadshow-activities">';
-    
+
     this.stops.forEach(stop => {
         html += `${stop.toHtml()}`;
     });
