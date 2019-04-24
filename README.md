@@ -1,8 +1,9 @@
 # Collaborative code activated with VS Code
-Olivier Leplus and Tiffany Souterre
-Last Update: 10 March 2019
+[Olivier Leplus](https://twitter.com/olivierleplus) and [Tiffany Souterre](https://twitter.com/TiffanySouterre)
 
-You're probably here because you saw our talk about collaborative code on VS Code :)
+You're probably here because you saw our talk about [collaborative code on VS Code](https://slides.com/olivierleplus/vscode-collaboration) :)
+
+Download VSCode here: https://code.visualstudio.com/
 
 Here is the list of extensions we used : 
 
@@ -19,3 +20,4 @@ Here is the list of extensions we used :
 - VS Live Share : https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
 
 - VS Live Share Audio : https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-audio
+ 
