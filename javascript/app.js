@@ -2,7 +2,6 @@ fetchData();
 
 function fetchData() {
     return fetch('/data/data.json')
-    return fetch('/data/data2.json')
         .then(function(response) {
             return response.json();
         }).then(function(data) {
