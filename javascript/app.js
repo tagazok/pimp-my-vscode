@@ -2,6 +2,7 @@ fetchData();
 
 function fetchData() {
     return fetch('/data/data.json')
+    return fetch('/data/data2.json')
         .then(function(response) {
             return response.json();
         }).then(function(data) {
@@ -11,6 +12,7 @@ function fetchData() {
             })
         });
 }
+
 
 // Talk
 function Talk(data) {
@@ -23,6 +25,7 @@ Talk.prototype.toHtml = function() {
         ${this.title} • <span class="speakers">(${this.speakers.join(', ')})</span>
     `;
 }
+
 
 // Activity
 function Activity(data) {
@@ -45,9 +48,9 @@ Activity.prototype.toHtml = function() {
         html += talk.toHtml();
     })
     html += '</ul></div>';
-
     return html;
 }
+
 
 // RoadshowStop
 function RoadshowStop(data) {
@@ -71,11 +74,10 @@ RoadshowStop.prototype.toHtml = function() {
     this.activities.forEach(activity => {
         html += activity.toHtml();
     });
-
     this.html += '</li>';
-
     return html;
 }
+
 
 // Roadshow
 function Roadshow(data) {
@@ -100,20 +102,16 @@ Roadshow.prototype.generateTemplate = function() {
             <h2 class="roadshow-title">${this.title}</h2>
             ${this.displayStops()}
         `;
-
     const range = document.createRange();
     const fragment = range.createContextualFragment(tmpl);
-
     return fragment;
 }
 
 Roadshow.prototype.displayStops = function() {
     let html = '<ul class="roadshow-activities">';
-
     this.stops.forEach(stop => {
         html += `${stop.toHtml()}`;
     });
-
     html += '</ul>';
     return html;
 }
