@@ -1,7 +1,7 @@
 fetchData();
 
 function fetchData() {
-    return fetch('/data/data.json')
+    return fetch('/data/data2.json')
         .then(function(response) {
             return response.json();
         }).then(function(data) {
@@ -20,7 +20,7 @@ function Talk(data) {
 
 Talk.prototype.toHtml = function() {
     return `
-        ${this.title} • <span class="speakers">(${this.speakers.join(', ')})</span>
+    <div>- ${this.title} • <span class="speakers">(${this.speakers.join(', ')})</span></div>
     `;
 }
 
