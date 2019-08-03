@@ -26,28 +26,29 @@ Talk.prototype.toHtml = function() {
 
 
 // Activity
-function Activity(data) {
-    this.host = data.host;
-    this.talks = [];
-    data.talks.forEach(talk => {
-        this.addTalk(talk);
-    });
-}
-
-Activity.prototype.addTalk = function(talk) {
-    this.talks.push(new Talk(talk));
-}
-
-Activity.prototype.toHtml = function() {
-    let html =
-        `<div class="activity">
+class Activity {
+    constructor(data) {
+        this.host = data.host;
+        this.talks = [];
+        data.talks.forEach(talk => {
+            this.addTalk(talk);
+        });
+    }
+    addTalk(talk) {
+        this.talks.push(new Talk(talk));
+    }
+    toHtml() {
+        let html = `<div class="activity">
             <div class="host">${this.host}</div><ul>`;
-    this.talks.forEach(talk => {
-        html += talk.toHtml();
-    })
-    html += '</ul></div>';
-    return html;
+        this.talks.forEach(talk => {
+            html += talk.toHtml();
+        });
+        html += '</ul></div>';
+        return html;
+    }
 }
+
+
 
 
 // RoadshowStop
